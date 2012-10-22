@@ -1,0 +1,7 @@
+1 rem repeatedly poll the user until she enters a pair (a,b) of integers with a < b
+10 input a
+20 input b
+30 if a = b goto 10
+40 print a
+50 print b
+60 end

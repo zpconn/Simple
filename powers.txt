@@ -1,0 +1,23 @@
+10 rem this simple program takes in a positive integer value and raises it
+20 rem to the power of the second positive integer entered
+30 input q
+40 input f
+45 rem have a value of one to print in case the factor is 0
+50 let c = 1
+55 rem r will be a constant value so that q can change as it is being multiplied
+60 let r = q
+65 rem if either value is negative end the program
+70 if q < 0 goto 170
+80 if f < 0 goto 170
+85 rem if the power is 0 then the value will be 1
+90 if f == 0 goto  160
+95 rem when the power value gets down to 1 this will cause the program to print the value and end the program
+100 if f == 1 goto  140
+110 let q = q * r
+115 rem 
+120 let f = f - 1
+130 goto 100
+140 print q
+150 end
+160 print c
+170 end

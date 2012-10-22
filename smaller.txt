@@ -1,0 +1,15 @@
+10 rem determine the smaller of two integers
+20 rem if the first value is smaller or equal to the integer then multiply the two integers
+30 rem if the second value is smaller then add the two integers
+40 input x
+50 input y
+60 rem test if x <= y
+70 if x <= y goto 130
+80 rem y is smaller than x, so 
+90 let z = x + y
+100 print z
+110 goto 150
+120 rem x is smaller than y, so
+130 let z = x * y
+140 print z
+150 end
